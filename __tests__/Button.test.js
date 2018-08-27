@@ -1,5 +1,7 @@
+// @flow 
+
 class Button {
-    _binder 
+    _binder: Function;
 
     constructor() {
         this._binder = this._binder.bind(this);
@@ -12,6 +14,6 @@ class Button {
 
 describe('Button', () => {
     it('does stuff', () => {
-        const x = Button();
+        const x = new Button();
     })
 });
